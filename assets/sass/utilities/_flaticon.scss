@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon/Flaticon.eot");
+  src: url("../fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/flaticon/Flaticon.woff2") format("woff2"),
+    url("../fonts/flaticon/Flaticon.woff") format("woff"),
+    url("../fonts/flaticon/Flaticon.ttf") format("truetype"),
+    url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after,
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.flaticon-balloons:before {content: "\f101";}
+.flaticon-balloons-1:before {content: "\f102";}
+.flaticon-balloons-2:before {content: "\f103";}
+.flaticon-search-interface-symbol:before {content: "\f104";}
+.flaticon-shopping-cart:before {content: "\f105";}
+.flaticon-menu:before {content: "\f106";}
+.flaticon-menu-1:before {content: "\f107";}
+.flaticon-clipboards:before {content: "\f108";}
+.flaticon-women:before {content: "\f109";}
+.flaticon-love:before {content: "\f10a";}
+.flaticon-call:before {content: "\f10b";}
+.flaticon-song:before {content: "\f10c";}
+.flaticon-romantic-dinner:before {content: "\f10d";}
+.flaticon-champagne:before {content: "\f10e";}
+.flaticon-reception:before {content: "\f10f";}
+.flaticon-gate:before {content: "\f110";}
+.flaticon-confetti:before {content: "\f111";}
+.flaticon-engagement:before {content: "\f112";}
+.flaticon-wedding-couple:before {content: "\f113";}
+.flaticon-wedding-couple-1:before {content: "\f114";}
+.flaticon-bride:before {content: "\f115";}
+.flaticon-couple:before {content: "\f116";}
+.flaticon-wedding:before {content: "\f117";}
+.flaticon-wedding-arch:before {content: "\f118";}
+.flaticon-bouquet:before {content: "\f119";}
+.flaticon-valentines-day:before {content: "\f11a";}
+.flaticon-wedding-contract:before {content: "\f11b";}

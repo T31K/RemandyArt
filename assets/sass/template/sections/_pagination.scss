@@ -1,0 +1,185 @@
+.vs-pagination {
+  text-align: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 3px;
+    list-style-type: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  span,
+  a {
+    display: inline-block;
+    @include equal-size(50px);
+    line-height: 45px;
+    font-size: 18px;
+    font-family: $title-font;
+    color: $title-color;
+    text-align: center;
+    position: relative;
+    background-color: #f8f8f8;
+    z-index: 1;
+    font-weight: 400;
+
+    i {
+      position: relative;
+      top: 4px;
+    }
+
+
+    &.active,
+    &:hover {
+      color: $white-color;
+      background-color: $theme-color;
+      border-color: transparent;
+    }
+  }
+
+}
+
+.pagi-box {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+
+  .media-img {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+  }
+
+  .media-body {
+    >a {
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      color: $body-color;
+
+      &:hover {
+        color: $theme-color;
+      }
+    }
+  }
+
+  &.next {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+}
+
+.vs-pagination-bar {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px 0 15px 0;
+}
+
+.post-pagi-box {
+  >a {
+    color: $body-color;
+    font-size: 14px;
+  }
+
+  .pagi-title {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 28px;
+  }
+
+  .pagi-icon {
+    position: relative;
+    top: 6px;
+  }
+
+  &.next {
+    text-align: right;
+  }
+  
+}
+
+.post-pagination{
+  padding: calc(var(--blog-space-y) - 6px) 0;
+  margin: var(--blog-space-y) var(--blog-space-x);
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+
+@include lg {
+
+  .post-pagi-box {
+    .pagi-title {
+      font-size: 22px;
+    }  
+  }
+
+  .pagi-icon .fa-3x {
+    font-size: 2rem;
+  }
+}
+
+@include sm {
+  .vs-pagination {
+
+    span,
+    a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  .pagi-box {
+    display: block;
+    text-align: left;
+
+    .media-img {
+      margin: 0 auto 15px 0;
+    }
+
+    &.next {
+      text-align: right;
+
+      .media-img {
+        margin: 0 0 15px auto;
+      }
+    }
+  }
+}
+
+@include xs {
+  .vs-pagination-bar {
+    .pagi-icon .fa-3x {
+      font-size: 2em;
+    }
+  }
+
+  .pagi-box {
+    .media-body>a {
+      letter-spacing: 0.1em;
+      font-size: 13px;
+    }
+
+    &.next .media-img, 
+    .media-img {
+      margin-bottom: 10px;
+    }
+  }
+
+  .vs-pagination-bar.mt-40 {
+    margin-top: 0;
+  }
+}

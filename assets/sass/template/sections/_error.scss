@@ -1,0 +1,48 @@
+.vs-error-wrapper {
+  height: calc(100vh - 100px);
+  background-size: 100% calc(100vh - 100px);
+  background-position: center top;
+}
+
+.error-number {
+  font-size: 15.5vw;
+}
+
+.error-text {
+  margin: 13px 0 50px 0;
+}
+
+.error-content {
+  padding-top: 6vh;
+}
+
+
+@include lg {
+  .error-number {
+    font-size: 20vw;
+  }
+
+  .error-text {
+    margin: 13px 0 20px 0;
+  }
+
+  .vs-error-wrapper {
+    height: calc(100vh - 66px);
+  }
+
+  .error-content {
+    padding-top: 9vh;
+  }
+}
+
+@include sm {
+  .vs-error-wrapper {
+    background-size: cover;
+    background-position: center center;
+  }
+
+
+  .error-content {
+    padding-top: 25vh;
+  }
+}

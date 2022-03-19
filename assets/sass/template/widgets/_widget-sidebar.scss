@@ -1,0 +1,284 @@
+.widget {
+  padding: 40px;
+  margin-bottom: 40px;
+  border: 2px solid #ededed;
+}
+
+.widget_title {
+  font-size: 24px;  
+  line-height: 1em;
+  margin-bottom: 35px;
+  margin-top: -0.07em;
+  position: relative;
+  padding-left: 46px;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 4px;
+    margin-top: -2px;
+    background-color: #e2e2e2;
+    width: 18px;
+  }
+
+  &:after {
+    width: 4px;
+    left: 22px;
+  }
+}
+
+
+.widget-author {
+  text-align: center;
+  --avater-size: 140px;
+
+  .avater {
+    width: var(--avater-size);
+    height: var(--avater-size);
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 18px;
+    border-radius: 100%;
+  }
+
+  .author-name {
+    margin-bottom: 13px;
+  }
+  
+  .social-links {
+    --icon-font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: -0.4em;
+
+    a:not(:hover) {
+      color: #a2a2a2;
+    }
+  }
+}
+
+
+.widget {
+  .search-form {
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 60px;
+      background-color: #f8f8f8;
+      border: none;
+      color: $body-color;
+      padding-left: 30px;
+      padding-right: 65px;
+      border-radius: 5px;
+      font-size: 14px;
+
+      @include inputPlaceholder {
+        color: $body-color;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &:hover {
+        background-color: $title-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+
+.wp-block-tag-cloud,
+.tagcloud {
+
+  a {
+    display: inline-block;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 10.5px 21px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: $body-color;
+    background-color: #f5f5f5;
+
+    &:hover {
+      background-color: $theme-color;
+      color: $white-color !important;
+    }
+  }
+}
+
+.tagcloud {
+  margin-right: -5px;
+  margin-bottom: -10px;
+}
+
+
+.feeds-media {
+  border-bottom: 1px solid #f0f4f7;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .media-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+
+  .feeds-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+    
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $theme-color;
+      }
+    }
+  }
+
+  .feeds-date {
+    color: $body-color;
+    font-size: 14px;
+
+    &:hover {
+      color: $theme-color;
+    }
+
+    i {
+      margin-right: 10px;
+      position: relative;
+      top: -1px;
+      font-size: 0.9em;
+      color: $theme-color;
+    }
+  }
+  
+}
+
+
+.widget-social-links {
+  .social-btns {
+    --icon-space: 5px;
+    
+    a {
+      border-color: transparent;
+      background-color: #f6f6f6;
+      color: #999999;
+
+      &:hover {
+        color: $white-color;
+        background-color: $theme-color;
+      }
+    }
+  }
+}
+
+.widget-twitter-feeds {
+  margin: -0.4em 0;
+}
+
+.twitter-feeds {
+  position: relative;
+  padding-left: 35px;
+  border-bottom: 1px solid #f0f4f7;
+  padding-bottom: 22px;
+  margin-bottom: 23px;
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  >.fa-twitter {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: $theme-color;
+  }
+
+  .twitte-text {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+
+  .twitte-date {
+    color: $body-color;
+    font-size: 14px;
+
+    &:hover {
+      color: $theme-color;
+    }
+
+    i {
+      margin-right: 10px;
+      position: relative;
+      top: -1px;
+      font-size: 0.9em;
+    }
+  }
+  
+}
+
+
+.sidebar-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+
+@include lg {  
+  .widget {
+    padding: 30px;
+  }
+
+  .widget-social-links .social-btns {
+    --icon-size: 35px;
+    font-size: 14px;
+  }
+
+  .feeds-media .media-img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+  }
+}
+
+@include md {
+  .sidebar-area.pl-20 {
+    padding-left: 0;
+  }
+}
+
+
+@include xs {
+  .widget {
+    padding: 30px 20px;
+  }
+
+  .wp-block-tag-cloud a,
+  .tagcloud a {
+    padding: 10.5px 15px;
+  }
+}

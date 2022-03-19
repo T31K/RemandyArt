@@ -1,0 +1,119 @@
+.form-style1,
+.form-style3 {
+  .form-select,
+  .form-control {
+    height: 70px;
+    border-radius: 0;
+    padding-left: 60px;
+    font-family: $body-font;
+    font-weight: 400;
+    font-size: 14px;
+    padding-right: 20px;
+  }
+
+  @include inputPlaceholder {
+    color: $body-color;
+  }
+  
+  .form-group {
+    i {
+      right: auto;
+      left: 40px;
+      top: 28px;
+      font-size: 0.9em;
+    }
+
+    .vs-btn {
+      height: 70px;
+    }
+  }
+
+}
+
+
+.form-style1 {
+
+  .form-select,
+  .form-control {   
+    @include inputPlaceholder {
+      color: $white-color;
+    }
+    
+    
+    &,
+    &:focus {
+      background-color: transparent;
+      color: $white-color;
+      border: 1px solid rgba(255,255,255,0.5);
+    }    
+  }
+
+  .form-group {
+    i {
+      color: $white-color;
+    }
+  }
+}
+
+
+.form-style2 {
+  display: flex;
+  position: relative;
+
+  input {
+    height: 80px;
+    border: none;
+    padding-left: 60px;
+    width: calc(100% - 225px);
+  }
+
+  .fa-envelope {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .vs-btn {
+    width: 225px;
+    background-color: #ae4450;
+  }
+}
+
+
+
+
+.form-style3 {
+  .form-select,
+  .form-control {
+    height: 70px;
+    border-color: #ededed;
+    padding-left: 55px;
+  }
+}
+
+
+
+
+
+@include sm {
+  .form-style2 {
+    display: block;
+    text-align: center;
+
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+      height: 60px;
+    }
+    
+    .fa-envelope {
+      top: 30px;
+    } 
+
+    .vs-btn {
+      height: 60px;
+    }
+    
+  }
+}

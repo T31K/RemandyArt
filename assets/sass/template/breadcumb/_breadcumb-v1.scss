@@ -1,0 +1,102 @@
+.breadcumb-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+  margin-top: -0.3em;
+
+  li {
+    display: inline-block;
+    position: relative;
+    padding-right: 22px;
+    margin-right: 15px;
+
+    &:last-child {
+      padding-right: 0;
+      margin-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: '|';
+      position: absolute;
+      right: 0;
+      color: $title-color;
+      color: rgba(255,255,255,0.6);
+    }
+  }
+
+  li,
+  a,
+  span {
+    white-space: normal;
+    color: inherit;
+    word-break: break-word;
+    font-weight: 400;
+    font-size: 16px;
+    color: $body-color;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+
+    &:hover,
+    &.active {
+      color: $white-color;
+    }
+    
+  }
+}
+
+
+.breadcumb-title {
+  font-size: 80px;
+  margin-top: -0.2em;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.breadcumb-wrapper {
+  padding-bottom: 118px;
+  padding-top: 140px;
+}
+
+@include lg {
+  .breadcumb-title {
+    font-size: 62px;
+  }
+
+  .breadcumb-menu {
+    margin-bottom: 18px;
+  }
+
+  .breadcumb-wrapper {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+}
+
+
+@include md {
+  .breadcumb-title {
+    font-size: 48px;
+  }
+
+  .breadcumb-menu li,
+  .breadcumb-menu a,
+  .breadcumb-menu span {
+    font-size: 14px;
+  }
+
+  .breadcumb-wrapper {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+}
+
+@include sm {
+  .breadcumb-title {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,193 @@
+.vs-hero-wrapper {    
+  --arrow-size: 80px;
+  --arrow-pos: 160px;
+
+  .ls-btn {
+    .play-btn {
+      --icon-size: 100px;
+      
+      i {
+        font-size: 24px;
+      }
+    }
+  }
+
+  a.ls-gui-element.ls-nav-prev,
+  a.ls-gui-element.ls-nav-next {
+    left: var(--arrow-pos);
+    background-color: $white-color;
+    color: $theme-color;
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+    line-height: var(--arrow-size) !important;
+    margin-top: calc(var(--arrow-size) / -2);
+    right: auto;
+    border-radius: 0;
+    font-size: 1.5em;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.4s;
+
+    &:before {
+      content: '\f30a';
+      font-weight: 300;
+      font-family: $icon-font;
+      transition: all ease 0.4s;
+    }
+
+    &:hover {
+      transform: none;
+      background-color: $theme-color;
+      color: $white-color;
+    }
+  }
+  
+  a.ls-gui-element.ls-nav-next {
+    left: auto;    
+    right: var(--arrow-pos);
+
+    &:before {
+      content: '\f30b';
+    }
+  }
+  
+  a.ls-gui-element.ls-nav-prev:after,
+  a.ls-gui-element.ls-nav-next:after {
+    display: none;
+  }
+
+
+  &:hover {
+    a.ls-gui-element.ls-nav-prev,
+    a.ls-gui-element.ls-nav-next {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+
+  // .ls-v6 .ls-bottom-nav-wrapper {
+  //   position: absolute;
+  //   left: 100px;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   display: inline-block;
+  //   height: fit-content;
+  // }
+
+  // .ls-gui-element.ls-bottom-nav-wrapper a {
+  //   display: block !important;
+  //   background-color: $title-color;
+  //   margin: 18px 0;
+  //   border-color: transparent !important;
+  //   transform: translateX(-50%);
+  //   transition: all ease 0.4s;
+
+  //   &:first-child {
+  //     margin-top: 0;
+  //   }
+
+  //   &:last-child {
+  //     margin-bottom: 0;
+  //   }
+
+  //   &.ls-nav-active:hover,
+  //   &.ls-nav-active {
+  //     background-color: $theme-color !important;
+  //   }
+  // }
+}
+
+
+
+
+
+
+.hero-layout1 {
+  border: 10px solid #ffedde;
+  max-width: 1720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-layout2 {
+  a.ls-gui-element.ls-nav-prev,
+  a.ls-gui-element.ls-nav-next {
+    margin-top: calc(var(--arrow-size) + 180px  * -1);
+  }
+}
+
+.ls-btn-center {
+  position: relative;
+  width: 200px;
+  height: 50px;
+
+  .vs-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+@include lg {
+  .vs-hero-wrapper {
+    .ls-v6 .ls-bottom-nav-wrapper {
+      display: none;
+    }
+
+    a.ls-gui-element.ls-nav-prev,
+    a.ls-gui-element.ls-nav-next {
+      display: none;
+    }
+  }
+
+  
+}
+
+
+@include md {
+  .ls-container  {
+    .ls-hide-md {
+      display: none !important;
+    }
+  }
+
+  .hero-layout2 {
+    margin-bottom: 30px;
+  }
+}
+
+@include sm {
+  .ls-container {
+    .ls-hide-sm {
+      display: none !important;
+    }
+  }
+  
+  .ls-btn {
+    .vs-btn {
+      padding: 10px 20px 10px 20px;
+      font-size: 14px;
+      margin-left: 0;
+
+      &:before {
+        display: none;
+      }
+
+      i {
+        display: none;
+      }
+    }
+  }
+
+  .ls-btn-center {
+    
+    .vs-btn {
+      background-color: $theme-color;
+      color: $white-color;
+      border-color: transparent;
+    }
+  }
+}

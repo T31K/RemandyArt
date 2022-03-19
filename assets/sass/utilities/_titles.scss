@@ -1,0 +1,56 @@
+.sub-title {
+  display: block;
+  text-transform: uppercase;
+  color: $theme-color;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  margin-top: -0.3em;
+  margin-bottom: 20px;
+}
+
+.sec-title {
+  font-size: 60px;
+  margin-top: -0.23em;
+  margin-bottom: 30px;
+}
+
+.title-area {
+  margin-bottom: 45px;
+}
+
+.inner-title {
+  margin-top: -0.2em;
+  margin-bottom: 33px;
+}
+
+
+
+
+@include lg {
+  .sec-title {
+    font-size: 48px;
+  }
+}
+
+@include md {
+  .sec-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .sub-title {
+    margin-bottom: 15px;
+  }
+}
+
+
+@include sm {
+  .sec-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .title-area {
+    margin-bottom: 25px;
+  }
+}

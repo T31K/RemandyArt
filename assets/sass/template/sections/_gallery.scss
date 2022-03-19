@@ -1,0 +1,231 @@
+.gallery-box {
+  position: relative;
+  --shape-space: 45px;
+  --btn-size: 50px;
+  overflow: hidden;
+
+  &.box-rounded {
+    border-radius: 50%;
+  }
+
+  img {
+    border-radius: inherit;
+    transition: all ease 0.4s;
+  }
+
+
+  .gal-btn {
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    line-height: var(--btn-size);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 1.7em;
+    z-index: 3;
+    color: $white-color;
+    transform: translate(-50%, -50%);
+    transition: all ease 0.4s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: var(--shape-space);
+    right: var(--shape-space);
+    bottom: var(--shape-space);
+    left: var(--shape-space);
+    z-index: 2;
+    opacity: 0;
+    background-color: $theme-color;
+    border-radius: inherit;
+    transition: all ease 0.4s;
+    transform: scale(0);
+  }
+  
+  
+  &:hover {
+    .gal-btn {
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0.2s;
+    }
+    
+    &:before {
+      opacity: 0.86;
+      transform: scale(1);
+    }
+
+    img {
+      transform: scale(1.2);
+    }
+  }
+
+
+}
+
+.feature-gal-box {
+  position: relative;
+}
+
+
+.instagram-box {
+  position: relative;
+  overflow: hidden;
+
+
+  .insta-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white-color;
+    font-family: $title-font;
+    font-size: 18px;
+    font-weight: 400;
+    color: $theme-color;
+    display: inline-block;
+    width: 182px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: all ease 0.4s;
+    opacity: 0;
+    visibility: hidden;
+
+    &:hover {
+      background-color: $theme-color;
+      color: $white-color;
+    }
+
+    i {
+      margin-right: 10px;
+    }
+  }
+
+
+  &:hover {
+    .insta-btn {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.portfolio-filter {
+  position: relative;
+  z-index: 1;
+  margin-top: -0.3em;
+  
+  button {
+    background-color: transparent;
+    border: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1;
+    position: relative;
+    padding: 0 18px 18px 18px;
+    margin: 0 17px 20px 17px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: $theme-color;
+      transition: all ease 0.4s;
+    }
+
+    &.active,
+    &:hover {
+      color: $theme-color;
+
+      &:before {
+        width: 100%;
+      }  
+    }
+  }
+
+}
+
+
+
+
+.portfolio-box {
+  margin-bottom: 5px;
+  
+  .portfolio-degi {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-img {
+    margin-bottom: 25px; 
+  } 
+
+}
+
+.portfolio-images-group {
+  padding-right: 55px;
+}
+
+
+.portfolio-single-padding {
+  padding-bottom: calc(var(--section-space) - 50px);
+}
+
+
+@media (min-width: $lg) {
+  .instagram-align-style1 {
+    >[class*=col-],
+    .slick-slide {
+      &:nth-child(even) {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@include ml {
+  .portfolio-filter {
+    button {
+      padding: 0 5px 20px 5px;
+      margin: 0 5px 10px 5px;
+    }
+  }
+}
+
+@include lg {
+  .gallery-box {
+    --shape-space: 20px;
+    --btn-size: 30px;
+  }
+
+  .portfolio-images-group {
+    padding-right: 0;
+  }
+}
+
+@include md {
+  .vs-pagination-bar.mt-40 {
+    margin-top: 20px;
+  }
+}
+
+@include sm {
+  .portfolio-filter {
+    button {
+      font-size: 14px;
+      padding: 0 5px 10px 5px;
+      margin: 0 5px 15px 5px;
+    }
+  }
+}

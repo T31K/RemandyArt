@@ -1,0 +1,43 @@
+.vs-accordion {
+  border-bottom: 1px solid #ebebeb;
+
+  &:first-child {
+    border-top: 1px solid #ebebeb;
+  }
+  
+  .accordion-button {
+    border: none;
+    padding: 25px 0 22px 0;
+    font-size: 20px;
+    font-family: $title-font;
+    font-weight: 300;
+    text-align: left;
+
+    &:after {
+      display: none;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:not(.collapsed) {
+      background-color: transparent;
+      color: $theme-color;
+    }
+  }
+
+  .accordion-body {
+    padding: 0 0 22px 0;
+
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .accordion-collapse {
+    border: none;
+  }
+}
