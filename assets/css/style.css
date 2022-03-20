@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 /*
 Template Name: Vibeson
 Template URL: http://vecurosoft.com/products/html/vibeson
@@ -81,7 +82,7 @@ Version: 1.0.0
   --success-color: #28a745;
   --error-color: #dc3545;
   --border-color: rgba(0,0,0,0.10);
-  --title-font: 'Cormorant Garamond';
+  --title-font: 'Sofia';
   --body-font: 'Roboto';
   --icon-font: 'Font Awesome 5 Pro';
   --flaticon: 'Flaticon';
@@ -97,36 +98,28 @@ Version: 1.0.0
 /*------------------- 1.3. Function -------------------*/
 /*------------------- 1.4. Theme Fonts -------------------*/
 @font-face {
-  font-family: 'Cormorant Garamond';
+  font-family: 'Sofia', cursive;
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("../fonts/cormorantGaramond/CormorantGaramond-Light.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/cormorantGaramond/CormorantGaramond-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/cormorantGaramond/CormorantGaramond-Light.woff2") format("woff2"), url("../fonts/cormorantGaramond/CormorantGaramond-Light.woff") format("woff"), url("../fonts/cormorantGaramond/CormorantGaramond-Light.ttf") format("truetype"), url("../fonts/cormorantGaramond/CormorantGaramond-Light.svg#CormorantGaramond-Light") format("svg");
+  src: url("https://fonts.googleapis.com/css2?family=Sofia&display=swap")
   /* Legacy iOS */
 }
 
 @font-face {
-  font-family: 'Cormorant Garamond';
+  font-family: 'Sofia', cursive;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/cormorantGaramond/CormorantGaramond-Regular.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/cormorantGaramond/CormorantGaramond-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/cormorantGaramond/CormorantGaramond-Regular.woff2") format("woff2"), url("../fonts/cormorantGaramond/CormorantGaramond-Regular.woff") format("woff"), url("../fonts/cormorantGaramond/CormorantGaramond-Regular.ttf") format("truetype"), url("../fonts/cormorantGaramond/CormorantGaramond-Regular.svg#CormorantGaramond-Regular") format("svg");
-  /* Legacy iOS */
+  src: url("https://fonts.googleapis.com/css2?family=Sofia&display=swap")
 }
 
 @font-face {
-  font-family: 'Cormorant Garamond';
+  font-family: 'Sofia', cursive;
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../fonts/cormorantGaramond/CormorantGaramond-Medium.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/cormorantGaramond/CormorantGaramond-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/cormorantGaramond/CormorantGaramond-Medium.woff2") format("woff2"), url("../fonts/cormorantGaramond/CormorantGaramond-Medium.woff") format("woff"), url("../fonts/cormorantGaramond/CormorantGaramond-Medium.ttf") format("truetype"), url("../fonts/cormorantGaramond/CormorantGaramond-Medium.svg#CormorantGaramond-Medium") format("svg");
-  /* Legacy iOS */
+  src: url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
 }
 
 @font-face {
@@ -828,8 +821,8 @@ textarea.form-control.is-invalid {
   line-height: 33px;
   font-size: 18px;
   z-index: 1;
-  color: var(--white-color);
-  background-color: rgba(var(--theme-color), 1);
+  color: rgba(var(--theme-color), 1);
+  background: none;
   border-radius: 50%;
 }
 
@@ -842,7 +835,7 @@ textarea.form-control.is-invalid {
   width: 100%;
   max-width: 310px;
   background-color: var(--white-color);
-  border-right: 3px solid rgba(var(--theme-color), 1);
+  /* border-right: 3px solid rgba(var(--theme-color), 1); */
   height: 100%;
   position: relative;
   left: -1000px;
@@ -896,7 +889,6 @@ textarea.form-control.is-invalid {
 }
 
 .vs-mobile-menu ul li {
-  border-bottom: 1px solid #fdedf1;
   list-style-type: none;
 }
 
@@ -909,13 +901,14 @@ textarea.form-control.is-invalid {
   position: relative;
   padding: 12px 0;
   line-height: 1;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: 'Sofia';
   text-transform: capitalize;
   color: var(--title-color);
 }
 
 .vs-mobile-menu ul li a:before {
-  content: '\f105';
+  content: '❤';
   font-family: var(--icon-font);
   position: relative;
   left: 0;
@@ -1037,8 +1030,8 @@ textarea.form-control.is-invalid {
   padding: 0;
   font-size: 24px;
   border: none;
-  background-color: rgba(var(--theme-color), 1);
-  color: var(--white-color);
+  background: none;
+  color: var(--theme-color);
   display: inline-block;
   border-radius: 50%;
 }
@@ -3140,7 +3133,7 @@ textarea.form-control.is-invalid {
 }
 
 .follow-box {
-  background-color: var(--white-color);
+  color: white;
   text-align: center;
   padding: 59px 20px;
 }
@@ -3152,8 +3145,13 @@ textarea.form-control.is-invalid {
 }
 
 .follow-social li {
+  color: white;
   display: inline-block;
   margin-right: 15px;
+}
+
+footer p, footer h4 {
+  color: white;
 }
 
 .follow-social li:last-child {
@@ -3161,7 +3159,7 @@ textarea.form-control.is-invalid {
 }
 
 .follow-social a {
-  color: #c4c2be;
+  color: white;
 }
 
 .follow-social a:hover {
