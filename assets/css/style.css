@@ -2500,6 +2500,11 @@ textarea.form-control.is-invalid {
   --avater-size: 140px;
 }
 
+div.avater img {
+  border-radius: 50%;
+  width: 300px;
+}
+
 .widget-author .avater {
   width: var(--avater-size);
   height: var(--avater-size);
