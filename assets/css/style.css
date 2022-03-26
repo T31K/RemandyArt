@@ -896,13 +896,12 @@ textarea.form-control.is-invalid {
   padding: 12px 0;
   line-height: 1;
   font-size: 20px;
-  font-family: 'Sofia';
+  font-family: var(--body-font);
   text-transform: capitalize;
   color: var(--title-color);
 }
 
 .vs-mobile-menu ul li a:before {
-  content: '❤';
   font-family: var(--icon-font);
   position: relative;
   left: 0;
