@@ -798,7 +798,7 @@ textarea.form-control.is-invalid {
 
 .vs-menu-wrapper .mobile-logo {
   padding-bottom: 25px;
-  padding-top: 40px;
+  padding-top: 60px;
   display: inline-block;
 }
 
@@ -848,7 +848,6 @@ textarea.form-control.is-invalid {
   top: 0;
   height: 100%;
   max-height: 122px;
-  background-color: rgba(var(--theme-color), 1);
   opacity: 0.1;
   z-index: -1;
 }
@@ -2818,6 +2817,14 @@ div.avater img {
   z-index: 41;
 }
 
+header img {
+  width: 130px;
+  margin-left: 10px;
+}
+
+div.mobile-logo a img {
+  width: 180px;
+}
 .will-sticky .sticky-active {
   position: fixed;
   top: -100%;
@@ -3105,6 +3112,9 @@ div.avater img {
 }
 
 /*------------------- 4.3. Footer  -------------------*/
+footer img {
+  width: 240px;
+}
 .footer-gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
