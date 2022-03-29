@@ -2008,7 +2008,6 @@ textarea.form-control.is-invalid {
 }
 
 [data-overlay="black"]:before {
-  background-color: var(--black-color);
 }
 
 [data-opacity="1"]:before {
@@ -3285,13 +3284,14 @@ footer p, footer h4 {
 .breadcumb-menu a.active,
 .breadcumb-menu span:hover,
 .breadcumb-menu span.active {
-  color: var(--white-color);
+  color: black !important;
 }
 
 .breadcumb-title {
   font-size: 80px;
   margin-top: -0.2em;
   line-height: 1.2;
+  color: black !important;
   margin-bottom: 0;
 }
 
