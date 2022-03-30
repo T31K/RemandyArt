@@ -1,17 +1,6 @@
 (function ($) {
   "use strict";
 /*
-Template Name: Vibeson
-Template URL: http://vecurosoft.com/products/html/vibeson
-Description: Vibeson – Wedding HTML Template
-Author: Vecuro
-Author URI: https://themeforest.net/user/vecuro
-Version: 1.0.0
-*/
-/*=================================
-    JS Index Here
-==================================*/
-/*
   01. On Load Function
   02. Preloader
   03. Mobile Menu Active
@@ -458,33 +447,8 @@ Version: 1.0.0
   }
 
 
-
-
-  /*----------- 00. Right Click Disable ----------*/
-  // window.addEventListener('contextmenu', function (e) {
-  //   // do something here... 
-  //   e.preventDefault();
-  // }, false);
-
-
-  /*----------- 00. Inspect Element Disable ----------*/
-  // document.onkeydown = function (e) {
-  //   if (event.keyCode == 123) {
-  //     return false;
-  //   }
-  //   if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-  //     return false;
-  //   }
-  //   if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-  //     return false;
-  //   }
-  //   if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-  //     return false;
-  //   }
-  //   if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-  //     return false;
-  //   }
-  // }
-
-
 })(jQuery);
+
+// lazy loads elements with default selector as '.lozad'
+const observer = lozad(); 
+observer.observe();
