@@ -4773,6 +4773,9 @@ blockquote cite:before {
   --icon-size: 120px;
 }
 
+div#contact_info h3 {
+  font-family: var(--body-font);
+}
 .contact-info-box .icon {
   display: inline-block;
   width: var(--icon-size);
