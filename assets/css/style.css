@@ -4755,6 +4755,13 @@ blockquote cite:before {
   text-align: center;
 }
 
+div.classes p, div.classes h3, div.classes h2 {
+  text-align: center;
+}
+
+div.class p.page {
+  margin-top: 8px;
+}
 .rounded-map {
   width: 530px;
   height: 530px;

@@ -446,6 +446,14 @@
     $('[data-sec-pos]').sectionPosition('data-sec-pos', 'data-pos-for');
   }
 
+  $('.classes').slick({
+    dots: true,
+    prevArrow: false,
+    nextArrow: false,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  });
 
 })(jQuery);
 
