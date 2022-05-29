@@ -452,6 +452,8 @@
     nextArrow: false,
     slidesToScroll: 1,
     autoplay: true,
+    cssEase: 'linear', 
+    slidesToShow: 1,
     autoplaySpeed: 1000,
   });
 
