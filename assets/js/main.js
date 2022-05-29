@@ -454,7 +454,7 @@
     autoplay: true,
     cssEase: 'linear', 
     slidesToShow: 1,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1500,
   });
 
 })(jQuery);
