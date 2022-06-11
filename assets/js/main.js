@@ -28,7 +28,24 @@
     $('.preloader').fadeOut();
   });
 
-
+  const meta = 
+  `
+    <title>Remandy Art | specializing in watercolour loose floral paintings, workshops and personalised gifts, based in Kuala Lumpur Malaysia.</title>
+    <meta name="title" content="Remandy Art | specializing in watercolour loose floral paintings, workshops and personalised gifts, based in Kuala Lumpur Malaysia.">
+    <meta name="description" content="Remandy.art is a small business specializing in watercolour loose floral paintings, classes, lessons, workshops and personalised gifts, based in Kuala Lumpur, Malaysia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://remandy.art/">
+    <meta property="og:title" content="Remandy Art | specializing in watercolour loose floral paintings, workshops and personalised gifts, based in Kuala Lumpur Malaysia.">
+    <meta property="og:description" content="Remandy.art is a small business specializing in watercolour loose floral paintings, classes, lessons, workshops and personalised gifts, based in Kuala Lumpur, Malaysia.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/T31K/RemandyArt/master/assets/img/meta/meta_full.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://remandy.art/">
+    <meta property="twitter:title" content="Remandy Art | specializing in watercolour loose floral paintings, workshops and personalised gifts, based in Kuala Lumpur Malaysia.">
+    <meta property="twitter:description" content="Remandy.art is a small business specializing in watercolour loose floral paintings, classes, lessons, workshops and personalised gifts, based in Kuala Lumpur, Malaysia.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/T31K/RemandyArt/master/assets/img/meta/meta_full.png">
+  `
+  
+  $('head').append(meta)
 
   /*---------- 02. Preloader ----------*/
   if ($('.preloader').length > 0) {
@@ -456,7 +473,8 @@
     slidesToShow: 1,
     autoplaySpeed: 1500,
   });
-
+  
+  
 })(jQuery);
 
 // lazy loads elements with default selector as '.lozad'
