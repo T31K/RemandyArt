@@ -895,9 +895,13 @@ textarea.form-control.is-invalid {
   padding: 12px 0;
   line-height: 1;
   font-size: 20px;
-  font-family: var(--body-font);
+  font-family: var(--title-font);
   text-transform: capitalize;
   color: var(--title-color);
+}
+
+.vs-mobile-menu ul li a:hover {
+  color: rgba(var(--theme-color), 0.9) !important;
 }
 
 .vs-mobile-menu ul li a:before {
@@ -2189,6 +2193,10 @@ textarea.form-control.is-invalid {
     font-family: "Flaticon";
     src: url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
   }
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 [class^="flaticon-"]:before,
