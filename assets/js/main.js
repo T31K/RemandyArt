@@ -28,12 +28,6 @@
     $('.preloader').fadeOut();
   });
 
-  const meta = 
-  `
-
-  `
-  
-  $('head').append
 
   /*---------- 02. Preloader ----------*/
   if ($('.preloader').length > 0) {
@@ -44,8 +38,10 @@
       })
     });
   };
-
-
+  
+  // $('.burger').on('click', function () {
+  //   $(this).toggleClass('active');
+  // });
 
   /*---------- 03. Mobile Menu Active ----------*/
   $.fn.vsmobilemenu = function (options) {
@@ -66,6 +62,8 @@
       // Menu Show & Hide
       function menuToggle() {
         menu.toggleClass(opt.bodyToggleClass);
+        $('.burger').toggleClass('active')
+        $('html').toggleClass('disable-scroll')
 
         // collapse submenu on menu hide or show
         var subMenu = '.' + opt.subMenuClass;

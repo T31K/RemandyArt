@@ -788,7 +788,7 @@ textarea.form-control.is-invalid {
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 999999;
   width: 0;
   height: 100%;
@@ -819,6 +819,96 @@ textarea.form-control.is-invalid {
   background: none;
   border-radius: 50%;
 }
+
+.disable-scroll {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden;
+}
+
+.burger {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 16px;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.burger__line {
+  position: absolute;
+  left: 50%;
+  width: 60%;
+  height: 2px;
+  background-color: black;
+  transform: translate(-50%, -50%);
+  transition: transform 200ms, opacity 200ms;
+  transform-origin: left center;
+}
+
+.burger__line--first {
+  top: calc(50% - 2px * 4);
+  transition-delay: 200ms;
+}
+.burger__line--middle {
+  top: 50%;
+  transform: translate(-50%, -50%) scaleX(1);
+  transition-delay: 300ms;
+}
+
+.burger__line--last {
+  top: calc(50% + 2px * 4);
+  transition-delay: 400ms;
+}
+
+.burger::before, .burger::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60%;
+  height: 2px;
+  background-color: black;
+  transform: translate(-50%, -50%) rotate(45deg) scaleX(0);
+  transition-property: transform;
+  transition-duration: 200ms;
+  transform-origin: center;
+}
+
+.burger::before {
+  transition-delay: 0ms;
+}
+.burger::after {
+  transition-delay: 100ms;
+}
+
+.burger.active .burger__line--first {
+  transform: translate(-50%, -50%) scaleX(0);
+  transition-delay: 0ms;
+}
+.burger.active .burger__line--middle {
+  transform: translate(-50%, -50%) scaleX(0);
+  transition-delay: 100ms;
+}
+.burger.active .burger__line--last {
+  transform: translate(-50%, -50%) scaleX(0);
+  transition-delay: 200ms;
+}
+
+.burger.active::before {
+  transform: translate(-50%, -50%) rotate(45deg) scaleX(1);
+  transition-delay: 300ms;
+}
+.burger.active::after {
+  transform: translate(-50%, -50%) rotate(-45deg) scaleX(1);
+  transition-delay: 400ms;
+}
+
+
+
 
 .vs-menu-wrapper .vs-menu-toggle:hover {
   background-color: var(--title-color);
@@ -3201,6 +3291,10 @@ footer p, footer h4 {
   padding: 25px 0;
 }
 
+.copyright p {
+  font-family: var(--body-font);
+}
+
 .footer-layout1 .copyright {
   border-top: 1px solid #e27c88;
 }
@@ -4948,7 +5042,6 @@ div#contact_info h3 {
   left: var(--shape-space);
   z-index: 2;
   opacity: 0;
-  background-color: rgba(var(--theme-color), 1);
   border-radius: inherit;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
