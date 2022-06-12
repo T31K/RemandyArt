@@ -478,5 +478,3 @@
 })(jQuery);
 
 // lazy loads elements with default selector as '.lozad'
-const observer = lozad(); 
-observer.observe();
