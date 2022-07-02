@@ -5031,7 +5031,7 @@ div#contact_info a {
   top: 50%;
   font-size: 1.7em;
   z-index: 3;
-  color: var(--white-color);
+  color: var(--primary-color);
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -5072,11 +5072,11 @@ div#contact_info a {
           transform: scale(1);
 }
 
-.gallery-box:hover img {
+/* .gallery-box:hover img {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
-}
+} */
 
 .feature-gal-box {
   position: relative;
