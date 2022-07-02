@@ -170,6 +170,10 @@ iframe {
   width: 100%;
 }
 
+textarea {
+  resize: none;
+}
+
 .slick-slide:focus,
 button:focus,
 a:focus,
@@ -4882,8 +4886,11 @@ div.class p.page {
   --icon-size: 120px;
 }
 
-div#contact_info h3 {
-  font-family: var(--body-font);
+div#contact_info h5 {
+  color: rgba(var(--theme-color), 1);
+}
+
+div#contact_info a {
 }
 .contact-info-box .icon {
   display: inline-block;
@@ -4950,6 +4957,7 @@ div#contact_info h3 {
     max-width: 150px;
   }
 }
+
 
 /* Medium Large devices */
 @media (max-width: 1399px) {
