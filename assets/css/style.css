@@ -5188,6 +5188,16 @@ div#contact_info a {
   .instagram-align-style1 .slick-slide:nth-child(even) {
     margin-top: 30px;
   }
+  
+  .vs-gallery-wrapper .row {
+    justify-content: center;
+  }
+  
+  
+  .slick-slider {
+    width: 50%;
+    padding: 5%;
+  }
 }
 
 /* Medium Large devices */

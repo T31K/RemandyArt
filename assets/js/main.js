@@ -42,6 +42,8 @@
   // $('.burger').on('click', function () {
   //   $(this).toggleClass('active');
   // });
+	let d = new Date
+	$('.copyright').addClass('text-white').text(`Copyright © ${d.getFullYear()} Remandy Art| All Rights Reserved`)
 
   /*---------- 03. Mobile Menu Active ----------*/
   $.fn.vsmobilemenu = function (options) {

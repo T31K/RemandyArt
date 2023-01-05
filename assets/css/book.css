@@ -33,7 +33,7 @@
   position: absolute;
   width: calc(280px - (2 * 15px));
   height: calc(450px - (2 * 15px));
-  background-image: url("https://res.cloudinary.com/dmfs0huzz/image/upload/v1597154148/stories-of-the-saints_sxtxjl.jpg");
+  background-image: url("../img/books/guide_to_watercolour_florals/cover.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-top-left-radius: 5px;
